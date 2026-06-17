@@ -22,7 +22,7 @@ const Projects = [
 	},
 	{
 		title: "Study Tracker",
-		textCard: true,
+		image: "p6.jpg",
 		description: "An AI-assisted study session tracker built with Claude Code. Log subjects, track daily progress, and visualise study habits over time.",
 		tags: ["Claude Code"],
 		platform: "web",
@@ -58,7 +58,7 @@ const Projects = [
 	},
 	{
 		title: "University Magazine Portal",
-		textCard: true,
+		image: "p3.png",
 		description: "A student magazine submission and management portal for the University of Greenwich. Built with Next.js, Tailwind CSS, and PostgreSQL.",
 		tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
 		platform: "web",
