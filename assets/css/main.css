@@ -627,9 +627,9 @@ label {
   .projects .project--lone {
     grid-column: 1 / -1; }
   .projects .project--lone[data-platform="mobile"] .project__content {
-    width: 32%; }
+    width: 65%; }
   .projects .project--lone[data-platform="mobile"] .project__info {
-    width: 32%; }
+    width: 65%; }
   .projects .project__platform {
     position: absolute;
     top: 0.75em;
