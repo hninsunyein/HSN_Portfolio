@@ -31,6 +31,24 @@ if (themeToggle) {
 	});
 }
 
+// Hamburger menu
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+
+if (hamburger && mobileNav) {
+	hamburger.addEventListener("click", () => {
+		hamburger.classList.toggle("open");
+		mobileNav.classList.toggle("open");
+	});
+
+	document.querySelectorAll("[data-mobile-nav]").forEach((link) => {
+		link.addEventListener("click", () => {
+			hamburger.classList.remove("open");
+			mobileNav.classList.remove("open");
+		});
+	});
+}
+
 // Activate links on scroll
 const mainContainer = document.querySelector("main");
 const sections = document.querySelectorAll("section[id]");

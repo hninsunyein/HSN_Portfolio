@@ -22,7 +22,8 @@ const Projects = [
 	},
 	{
 		title: "Study Tracker",
-		image: "p3.jpg",
+		textCard: true,
+		description: "An AI-assisted study session tracker built with Claude Code. Log subjects, track daily progress, and visualise study habits over time.",
 		tags: ["Claude Code"],
 		platform: "web",
 		href: "https://study-tracker-rosy.vercel.app/",
@@ -57,7 +58,8 @@ const Projects = [
 	},
 	{
 		title: "University Magazine Portal",
-		image: "p6.png",
+		textCard: true,
+		description: "A student magazine submission and management portal for the University of Greenwich. Built with Next.js, Tailwind CSS, and PostgreSQL.",
 		tags: ["Next.js", "Tailwind CSS", "PostgreSQL"],
 		platform: "web",
 		href: "https://uni-voice-teamgpc4.vercel.app/login",
@@ -78,9 +80,15 @@ const platformBadge = {
 	both: `<div class="project__platform project__platform--both"><i class="fa-solid fa-display" title="Web App"></i><i class="fa-solid fa-mobile-screen-button" title="Mobile App"></i></div>`,
 };
 
-const projectLayout = ({ title, image, tags, platform, apk }) => `
-    <div class="project__content">
-        <img class="project__image" src="${imagesPath}${image}" />
+const projectLayout = ({ title, image, textCard, description, tags, platform, apk }) => `
+    <div class="project__content${textCard ? " project__content--text" : ""}">
+        ${textCard
+            ? `<div class="project__text-card">
+                <h4 class="project__text-card-title">${title}</h4>
+                <p class="project__text-card-desc">${description}</p>
+               </div>`
+            : `<img class="project__image" src="${imagesPath}${image}" />`
+        }
         ${platformBadge[platform] || ""}
     </div>
     <div class="project__info">
