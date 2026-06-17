@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog — Hnin Su Nyein</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			body { height: auto !important; overflow-y: auto !important; overflow-x: hidden; }
+		</style>
+	</head>
+	<body>
+		<div class="blog-page container">
+			<a href="index.html#blog" class="back-btn">
+				<i class="fa-solid fa-arrow-left fa-fw"></i> Back to Blog
+			</a>
+			<article id="blogArticle">
+				<!-- populated by blog-post.js -->
+			</article>
+		</div>
+
+		<button class="theme-toggle" id="themeToggle" title="Toggle theme">
+			<i class="fa-solid fa-sun fa-fw"></i>
+		</button>
+
+		<script src="assets/js/blog-data.js"></script>
+		<script src="assets/js/blog-post.js"></script>
+	</body>
+</html>

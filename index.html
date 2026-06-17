@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hnin Su Nyein</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- CSS Style -->
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Start Preloader -->
+		<div id="preloader" class="preloader">
+			<div class="loader"></div>
+		</div>
+		<!-- End Preloader -->
+		<div class="page container">
+			<!-- Start Navbar -->
+			<nav class="navbar">
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a href="#home" class="navbar__link active">
+							<i class="fa-solid fa-house fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#about" class="navbar__link">
+							<i class="fa-solid fa-user fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#resume" class="navbar__link">
+							<i class="fa-solid fa-briefcase fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#services" class="navbar__link">
+							<i class="fa-solid fa-bars-staggered fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#skills" class="navbar__link">
+							<i class="fa-solid fa-shapes fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#testimonial" class="navbar__link">
+							<i class="fa-solid fa-comment-dots fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#portfolio" class="navbar__link">
+							<i class="fa-solid fa-grip-vertical fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#blog" class="navbar__link">
+							<i class="fa-solid fa-newspaper fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#contact" class="navbar__link">
+							<i class="fa-solid fa-envelope fa-fw icon navbar__icon"></i>
+						</a>
+					</li>
+				</ul>
+				<button class="theme-toggle" id="themeToggle" title="Toggle theme">
+					<i class="fa-solid fa-sun fa-fw"></i>
+				</button>
+			</nav>
+			<!-- End Navbar -->
+			<!-- Start Sidebar -->
+			<aside class="sidebar">
+				<div class="profile">
+					<div class="profile__header">
+						<!-- <img
+							class="profile__logo"
+							src="assets/images/logo.png"
+							alt="logo"
+						/> -->
+						<p class="profile__designation">Full Stack Developer</p>
+					</div>
+					<div class="profile__content">
+						<img
+							class="profile__image"
+							src="assets/images/profile.jpg"
+							alt="Profile Image"
+						/>
+						<p class="profile__info">hninsunyein07@gmail.com</p>
+						<p class="copyright">&copy; 2025 Hnin Su Nyein. All rights reserved</p>
+
+						<div class="social">
+							<ul class="social__list">
+								<li class="social__item">
+									<a
+										class="social__link"
+										href="https://github.com/hninsunyein"
+										target="_blank"
+									>
+										<i class="fa-brands fa-github fa-fw social__icon icon"></i>
+									</a>
+								</li>
+								<li class="social__item">
+									<a
+										class="social__link"
+										href="https://www.linkedin.com/in/hnin-su-nyein-6a9476239"
+										target="_blank"
+									>
+										<i class="fa-brands fa-linkedin fa-fw social__icon icon"></i>
+									</a>
+								</li>
+							</ul>
+
+							<a href="cv.html" target="_blank" class="cv-text-link">
+								<i class="fa-solid fa-download fa-fw"></i>
+								Download CV
+							</a>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- End Sidebar -->
+			<main class="main">
+				<!-- Start Home Section -->
+				<section class="section home" id="home">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-house fa-fw icon"></i>
+							Home
+						</p>
+						<h1 class="section__title section__title--lg">
+							I'm <span>Hnin Su Nyein</span>, Full Stack Developer
+						</h1>
+						<p class="section__description">
+							Full-Stack Developer and Freelance Designer passionate about building modern web and cross-platform applications using React.js, Next.js, and Node.js. With expertise in frontend development, backend systems, and UI/UX design, I create scalable digital products that deliver seamless experiences across web, mobile, and desktop platforms.
+						</p>
+<div class="facts">
+							<div class="fact">
+								<p class="fact__number">3+</p>
+								<p class="fact__description">Years of experience</p>
+							</div>
+							<div class="fact">
+								<p class="fact__number">10+</p>
+								<p class="fact__description">
+									Freelance projects completed
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Home Section -->
+				<!-- Start About Section -->
+				<section class="section about" id="about">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-user fa-fw icon"></i>
+							About
+						</p>
+						<h2 class="section__title">
+							Turning Ideas into <span>Scalable Digital Solutions</span>
+						</h2>
+						<p class="section__description">
+							I'm a Full-Stack Developer and Freelance Designer passionate about building modern web and cross-platform applications that deliver seamless experiences across desktop, mobile, and web platforms.
+						</p>
+						<p class="section__description">
+							My experience includes developing responsive web applications, real-time dashboards, and user-centered digital products using React.js, Next.js, Node.js, and modern UI/UX design principles. I enjoy creating scalable solutions that combine clean architecture, intuitive interfaces, and high performance.
+						</p>
+						<p class="section__description">
+							I hold a B.Sc. (Hons) in Computing from the University of Greenwich, UK, and continuously explore modern development workflows, cross-platform technologies, and AI-assisted coding tools such as Claude Code to improve productivity and code quality. My goal is to transform ideas into reliable, user-focused applications through clean code, thoughtful design, and efficient engineering practices.
+						</p>
+					</div>
+				</section>
+				<!-- End About Section -->
+				<!-- Start Resume Section -->
+				<section class="section resume" id="resume">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-briefcase fa-fw icon"></i>
+							Resume
+						</p>
+						<h2 class="section__title">Education & <span>Experience</span></h2>
+						<div class="resume__columns">
+							<div class="resume__col">
+								<h3 class="resume__col-title">Experience</h3>
+								<div id="experience-timelines" class="timelines"></div>
+							</div>
+							<div class="resume__col">
+								<h3 class="resume__col-title">Education</h3>
+								<div id="education-timelines" class="timelines"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Resume Section -->
+				<!-- Start Services Section -->
+				<section class="section services" id="services">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-bars-staggered fa-fw icon"></i>
+							Services
+						</p>
+						<h2 class="section__title">My <span>Specializations</span></h2>
+						<div class="services__wrapper">
+							<!-- Added using JS dynamically -->
+						</div>
+					</div>
+				</section>
+				<!-- End Services Section -->
+				<!-- Start Testimonial Section -->
+				<section class="section testimonial" id="testimonial">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-regular fa-comment-dots fa-fw icon"></i>
+							Testimonial
+						</p>
+						<h2 class="section__title">
+							Professional <span>Reference</span>
+						</h2>
+						<div class="slider" id="clientsSlider">
+							<div class="slider-wrapper">
+								<!-- Added using JS dynamically -->
+							</div>
+							<button class="slider-button-prev">
+								<i class="fa-solid fa-chevron-left fa-fw icon"></i>
+							</button>
+							<button class="slider-button-next">
+								<i class="fa-solid fa-chevron-right fa-fw icon"></i>
+							</button>
+						</div>
+					</div>
+				</section>
+				<!-- End Testimonial Section -->
+				<!-- Start Skills Section -->
+				<section class="section skills" id="skills">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-shapes fa-fw icon"></i>
+							Skills
+						</p>
+						<h2 class="section__title">My <span>Advantages</span></h2>
+						<div class="skills__wrapper">
+							<!-- Added using JS dynamically -->
+						</div>
+					</div>
+				</section>
+				<!-- End Skills Section -->
+				<!-- Start Portfolio Section -->
+				<section class="section portfolio" id="portfolio">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-grip-vertical fa-fw icon"></i>
+							Portfolio
+						</p>
+						<h2 class="section__title">Featured <span>Projects</span></h2>
+						<div class="portfolio__wrapper projects">
+							<!-- Added using JS dynamically -->
+						</div>
+					</div>
+				</section>
+				<!-- End Portfolio Section -->
+				<!-- Start Blog Section -->
+				<section class="section blog" id="blog">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-newspaper fa-fw icon"></i>
+							Blog
+						</p>
+						<h2 class="section__title">Latest <span>Posts</span></h2>
+						<div class="blog__wrapper">
+							<!-- Added using JS dynamically -->
+						</div>
+					</div>
+				</section>
+				<!-- End Blog Section -->
+				<!-- Start Contact Section -->
+				<section class="section contact" id="contact">
+					<div class="wrapper">
+						<p class="section__subtitle">
+							<i class="fa-solid fa-envelope fa-fw icon"></i>
+							Contact
+						</p>
+						<h2 class="section__title">Get In <span>Touch</span></h2>
+						<div class="contact__info">
+							<div class="contact__item">
+								<i class="fa-solid fa-envelope fa-fw icon"></i>
+								<a href="mailto:hninsunyein07@gmail.com">hninsunyein07@gmail.com</a>
+							</div>
+							<div class="contact__item">
+								<i class="fa-solid fa-phone fa-fw icon"></i>
+								<span>+66 65 290 3224</span>
+							</div>
+							<div class="contact__item">
+								<i class="fa-solid fa-location-dot fa-fw icon"></i>
+								<span>Chiang Mai, Thailand</span>
+							</div>
+							<div class="contact__item">
+								<i class="fa-brands fa-linkedin fa-fw icon"></i>
+								<a href="https://www.linkedin.com/in/hnin-su-nyein-6a9476239" target="_blank">linkedin.com/in/hnin-su-nyein</a>
+							</div>
+							<div class="contact__item">
+								<i class="fa-brands fa-github fa-fw icon"></i>
+								<a href="https://github.com/hninsunyein" target="_blank">github.com/hninsunyein</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Contact Section -->
+			</main>
+		</div>
+		<!-- JS -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/resume.js"></script>
+		<script src="assets/js/services.js"></script>
+		<script src="assets/js/skills.js"></script>
+		<script src="assets/js/projects.js"></script>
+		<script src="assets/js/blog-data.js"></script>
+		<script src="assets/js/blog.js"></script>
+		<script src="assets/js/testimonial.js"></script>
+	</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hnin Su Nyein – CV</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			*, *::before, *::after { box-sizing: border-box; }
+			img { max-width: 100%; display: block; }
+			ul { list-style: none; padding: 0; margin: 0; }
+			a { text-decoration: none; color: inherit; }
+
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Inter", sans-serif;
+				font-size: 1.08rem;
+				line-height: 1.75;
+				color: #222;
+				background: #fff;
+			}
+
+			/* ── Print / Back bar ── */
+			.print-bar {
+				position: fixed;
+				top: 1.25em;
+				right: 1.5em;
+				display: flex;
+				gap: 0.75em;
+				z-index: 999;
+			}
+			.print-btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5em;
+				padding: 0.55em 1.4em;
+				border-radius: 100vmax;
+				font-family: "Inter", sans-serif;
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				cursor: pointer;
+				transition: 200ms ease;
+				border: 2px solid #222;
+				background: #222;
+				color: #fff;
+			}
+			.print-btn:hover { background: #444; border-color: #444; }
+			.back-btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5em;
+				padding: 0.55em 1.4em;
+				border-radius: 100vmax;
+				font-family: "Inter", sans-serif;
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				cursor: pointer;
+				transition: 200ms ease;
+				border: 2px solid #bbb;
+				background: transparent;
+				color: #444;
+			}
+			.back-btn:hover { border-color: #222; color: #222; }
+
+			/* ── Page ── */
+			.cv-page {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 3.5em 2em 4em;
+			}
+
+			/* ── Header ── */
+			.cv-header {
+				display: flex;
+				align-items: center;
+				gap: 2em;
+				border-bottom: 2px solid #222;
+				padding-bottom: 2em;
+				margin-bottom: 2.5em;
+			}
+			.cv-header__photo {
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: center center;
+				border: 2px solid #222;
+				flex-shrink: 0;
+			}
+			.cv-header__info { flex: 1; }
+			.cv-header__name {
+				font-size: 2.3rem;
+				font-weight: 700;
+				color: #111;
+				margin: 0 0 0.1em;
+				line-height: 1.1;
+			}
+			.cv-header__title {
+				font-size: 1rem;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				color: #555;
+				margin: 0 0 1em;
+				font-weight: 400;
+			}
+			.cv-header__contacts {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4em 1.5em;
+			}
+			.cv-contact-item {
+				display: flex;
+				align-items: center;
+				gap: 0.4em;
+				font-size: 0.92rem;
+				color: #444;
+			}
+			.cv-contact-item i { width: 1em; color: #222; }
+
+			/* ── Divider ── */
+			.cv-divider {
+				border: none;
+				border-top: 1px solid #ccc;
+				margin: 2em 0;
+			}
+
+			/* ── Section ── */
+			.cv-section { margin-bottom: 2em; }
+			.cv-section__label {
+				font-size: 0.7rem;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+				color: #888;
+				font-weight: 700;
+				margin-bottom: 0.9em;
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+			}
+			.cv-section__label::after {
+				content: "";
+				flex: 1;
+				height: 1px;
+				background: #ddd;
+			}
+
+			/* ── Summary ── */
+			.cv-summary {
+				font-size: 1rem;
+				color: #333;
+				max-width: 70ch;
+			}
+
+			/* ── Timeline ── */
+			.cv-timelines {
+				display: grid;
+				gap: 1.25em;
+			}
+			.cv-timeline {
+				padding-left: 1.25em;
+				border-left: 2px solid #ddd;
+			}
+			.cv-timeline__date {
+				font-size: 0.85rem;
+				color: #888;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				margin: 0 0 0.2em;
+			}
+			.cv-timeline__title {
+				font-size: 1.02rem;
+				font-weight: 700;
+				color: #111;
+				margin: 0 0 0.1em;
+			}
+			.cv-timeline__desc {
+				font-size: 0.93rem;
+				color: #555;
+				margin: 0;
+			}
+			.cv-timeline__detail {
+				font-size: 0.9rem;
+				color: #666;
+				margin: 0.35em 0 0;
+			}
+
+			/* ── Skills (text list, no bars) ── */
+			.cv-skill-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+			}
+			.cv-skill-item {
+				font-size: 0.92rem;
+				border: 1px solid #bbb;
+				color: #333;
+				padding: 0.2em 0.9em;
+				border-radius: 100vmax;
+			}
+
+			/* ── Languages ── */
+			.cv-lang-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.75em 2em;
+			}
+			.cv-lang-item { font-size: 0.96rem; color: #333; }
+			.cv-lang-item span { color: #888; font-size: 0.88rem; margin-left: 0.3em; }
+
+			/* ── Footer ── */
+			.cv-footer {
+				border-top: 1px solid #ddd;
+				margin-top: 3em;
+				padding-top: 1.25em;
+				text-align: center;
+				font-size: 0.78rem;
+				color: #aaa;
+			}
+
+			/* ── Print ── */
+			@media print {
+				@page {
+					size: A4;
+					margin: 0;
+				}
+				.print-bar { display: none; }
+				body {
+					color: #000;
+					background: #fff;
+					padding: 1.8cm 1.8cm;
+				}
+				.cv-page { padding: 0; max-width: 100%; }
+				.cv-header { padding-bottom: 1.25em; margin-bottom: 1.5em; }
+				.cv-section { margin-bottom: 1.5em; }
+				.cv-divider { margin: 1.25em 0; }
+			}
+
+			@media (max-width: 600px) {
+				.cv-header { flex-direction: column; align-items: flex-start; }
+				.print-bar { position: static; justify-content: flex-end; padding: 1em 1em 0; }
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Print / Back buttons -->
+		<div class="print-bar">
+			<a href="index.html" class="back-btn">
+				<i class="fa-solid fa-arrow-left fa-fw"></i> Back
+			</a>
+			<button class="print-btn" onclick="window.print()">
+				<i class="fa-solid fa-download fa-fw"></i> Download PDF
+			</button>
+		</div>
+
+		<div class="cv-page">
+
+			<!-- Header -->
+			<header class="cv-header">
+				<img class="cv-header__photo" src="assets/images/profile.jpg" alt="Hnin Su Nyein" />
+				<div class="cv-header__info">
+					<h1 class="cv-header__name">Hnin Su Nyein</h1>
+					<p class="cv-header__title">Full Stack Developer</p>
+					<div class="cv-header__contacts">
+						<span class="cv-contact-item">
+							<i class="fa-solid fa-envelope fa-fw"></i>
+							hninsunyein07@gmail.com
+						</span>
+						<span class="cv-contact-item">
+							<i class="fa-solid fa-phone fa-fw"></i>
+							+66 65 290 3224
+						</span>
+						<span class="cv-contact-item">
+							<i class="fa-solid fa-location-dot fa-fw"></i>
+							Chiang Mai, Thailand
+						</span>
+						<span class="cv-contact-item">
+							<i class="fa-brands fa-linkedin fa-fw"></i>
+							linkedin.com/in/hnin-su-nyein-6a9476239
+						</span>
+						<span class="cv-contact-item">
+							<i class="fa-brands fa-github fa-fw"></i>
+							github.com/hninsunyein
+						</span>
+					</div>
+				</div>
+			</header>
+
+			<!-- Profile -->
+			<section class="cv-section">
+				<p class="cv-section__label">Profile</p>
+				<p class="cv-summary">
+					Full-Stack Developer and Freelance Designer with 3+ years of experience building modern web and cross-platform applications. Skilled in React.js, Next.js, Node.js, Flutter, React Native, and AI-assisted development with Claude Code. Passionate about delivering scalable, user-focused digital products through clean code, thoughtful design, and efficient engineering practices.
+				</p>
+			</section>
+
+			<hr class="cv-divider" />
+
+			<!-- Experience -->
+			<section class="cv-section">
+				<p class="cv-section__label">Experience</p>
+				<div class="cv-timelines">
+					<div class="cv-timeline">
+						<p class="cv-timeline__date">Dec 2023 – Present</p>
+						<p class="cv-timeline__title">Freelance Developer</p>
+						<p class="cv-timeline__desc">Self-employed · Remote</p>
+						<p class="cv-timeline__detail">
+							Building full-stack web and mobile applications for clients. End-to-end delivery using React.js, Next.js, Flutter, React Native, Node.js, PostgreSQL — deployed via Vercel and Railway.
+						</p>
+					</div>
+					<div class="cv-timeline">
+						<p class="cv-timeline__date">Mar 2023 – Jul 2023</p>
+						<p class="cv-timeline__title">Web Developer</p>
+						<p class="cv-timeline__desc">Kumo Solutions Co.Ltd · Mandalay, Myanmar (NXOps – Evercomm Singapore)</p>
+						<p class="cv-timeline__detail">
+							Developed the NXOps Energy Monitoring Dashboard using React.js and Ant Design for real-time energy data visualisation.
+						</p>
+					</div>
+					<div class="cv-timeline">
+						<p class="cv-timeline__date">Aug 2021 – Jan 2023</p>
+						<p class="cv-timeline__title">Coding Instructor</p>
+						<p class="cv-timeline__desc">S2 Tech Training Center · Remote</p>
+						<p class="cv-timeline__detail">
+							Taught web development and programming fundamentals; designed course materials and practical exercises.
+						</p>
+					</div>
+					<div class="cv-timeline">
+						<p class="cv-timeline__date">Oct 2019 – Dec 2019</p>
+						<p class="cv-timeline__title">Web Developer (Internship)</p>
+						<p class="cv-timeline__desc">Spiceworks Myanmar Co.Ltd · Yangon, Myanmar</p>
+					</div>
+				</div>
+			</section>
+
+			<hr class="cv-divider" />
+
+			<!-- Education -->
+			<section class="cv-section">
+				<p class="cv-section__label">Education</p>
+				<div class="cv-timelines">
+					<div class="cv-timeline">
+						<p class="cv-timeline__date">Jun 2025 – Jun 2026</p>
+						<p class="cv-timeline__title">B.Sc (Hons) Computing</p>
+						<p class="cv-timeline__desc">University of Greenwich, UK</p>
+					</div>
+					<div class="cv-timeline">
+						<p class="cv-timeline__date">Dec 2014 – Dec 2020</p>
+						<p class="cv-timeline__title">B.E Information Science &amp; Technology</p>
+						<p class="cv-timeline__desc">University of Technology (Yatanarpon Cyber City), Myanmar</p>
+						<p class="cv-timeline__desc">GPA 4.07 / 5.0</p>
+					</div>
+				</div>
+			</section>
+
+			<hr class="cv-divider" />
+
+			<!-- Skills -->
+			<section class="cv-section">
+				<p class="cv-section__label">Skills</p>
+				<div class="cv-skill-list">
+					<span class="cv-skill-item">JavaScript</span>
+					<span class="cv-skill-item">React.js</span>
+					<span class="cv-skill-item">Next.js</span>
+					<span class="cv-skill-item">Flutter</span>
+					<span class="cv-skill-item">React Native</span>
+					<span class="cv-skill-item">Node.js</span>
+					<span class="cv-skill-item">NestJS</span>
+					<span class="cv-skill-item">Express</span>
+					<span class="cv-skill-item">PostgreSQL</span>
+					<span class="cv-skill-item">MongoDB</span>
+					<span class="cv-skill-item">CSS3 / Tailwind</span>
+					<span class="cv-skill-item">SASS</span>
+					<span class="cv-skill-item">Vercel</span>
+					<span class="cv-skill-item">Railway</span>
+					<span class="cv-skill-item">Docker</span>
+					<span class="cv-skill-item">Claude Code (AI-Assisted Dev)</span>
+					<span class="cv-skill-item">Figma</span>
+					<span class="cv-skill-item">Git</span>
+					<span class="cv-skill-item">Java</span>
+				</div>
+			</section>
+
+			<hr class="cv-divider" />
+
+			<!-- Languages -->
+			<section class="cv-section">
+				<p class="cv-section__label">Languages</p>
+				<div class="cv-lang-list">
+					<span class="cv-lang-item">Burmese <span>Native</span></span>
+					<span class="cv-lang-item">English <span>Professional working proficiency</span></span>
+				</div>
+			</section>
+
+			<footer class="cv-footer">
+				&copy; 2025 Hnin Su Nyein &nbsp;·&nbsp; hninsunyein07@gmail.com &nbsp;·&nbsp; +66 65 290 3224
+			</footer>
+
+		</div>
+	</body>
+</html>

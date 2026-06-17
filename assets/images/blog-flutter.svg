@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050d1a"/>
+      <stop offset="100%" stop-color="#091427"/>
+    </linearGradient>
+    <linearGradient id="codePanel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="deviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2740"/>
+      <stop offset="100%" stop-color="#0d1929"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#06101e"/>
+    </linearGradient>
+    <linearGradient id="logoTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#54C5F8"/>
+      <stop offset="100%" stop-color="#29B6F6"/>
+    </linearGradient>
+    <linearGradient id="logoBot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29B6F6"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="leftClip">
+      <rect x="0" y="0" width="560" height="630"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+    <line x1="50" y1="0" x2="50" y2="50" stroke="#54C5F8" stroke-width="0.3" opacity="0.05"/>
+    <line x1="0" y1="50" x2="50" y2="50" stroke="#54C5F8" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- ── LEFT: CODE PANEL ── -->
+  <rect x="0" y="0" width="560" height="630" fill="url(#codePanel)" opacity="0.9"/>
+
+  <!-- Code window chrome -->
+  <rect x="40" y="80" width="490" height="460" rx="12" fill="#0d1117" stroke="#1e2d42" stroke-width="1.5"/>
+  <!-- Window title bar -->
+  <rect x="40" y="80" width="490" height="36" rx="12" fill="#131d2e"/>
+  <rect x="40" y="104" width="490" height="12" fill="#131d2e"/>
+  <!-- Traffic lights -->
+  <circle cx="66" cy="98" r="6" fill="#f87171" opacity="0.85"/>
+  <circle cx="86" cy="98" r="6" fill="#fbbf24" opacity="0.85"/>
+  <circle cx="106" cy="98" r="6" fill="#34d399" opacity="0.85"/>
+  <!-- File name -->
+  <text x="270" y="102" font-family="monospace" font-size="11" fill="#8899aa" text-anchor="middle">main.dart</text>
+
+  <!-- Code content -->
+  <!-- Line numbers -->
+  <text x="60" y="140" font-family="monospace" font-size="12" fill="#3a4a5e">1</text>
+  <text x="60" y="158" font-family="monospace" font-size="12" fill="#3a4a5e">2</text>
+  <text x="60" y="176" font-family="monospace" font-size="12" fill="#3a4a5e">3</text>
+  <text x="60" y="194" font-family="monospace" font-size="12" fill="#3a4a5e">4</text>
+  <text x="60" y="212" font-family="monospace" font-size="12" fill="#3a4a5e">5</text>
+  <text x="60" y="230" font-family="monospace" font-size="12" fill="#3a4a5e">6</text>
+  <text x="60" y="248" font-family="monospace" font-size="12" fill="#3a4a5e">7</text>
+  <text x="60" y="266" font-family="monospace" font-size="12" fill="#3a4a5e">8</text>
+  <text x="60" y="284" font-family="monospace" font-size="12" fill="#3a4a5e">9</text>
+  <text x="52" y="302" font-family="monospace" font-size="12" fill="#3a4a5e">10</text>
+  <text x="52" y="320" font-family="monospace" font-size="12" fill="#3a4a5e">11</text>
+  <text x="52" y="338" font-family="monospace" font-size="12" fill="#3a4a5e">12</text>
+  <text x="52" y="356" font-family="monospace" font-size="12" fill="#3a4a5e">13</text>
+  <text x="52" y="374" font-family="monospace" font-size="12" fill="#3a4a5e">14</text>
+  <text x="52" y="392" font-family="monospace" font-size="12" fill="#3a4a5e">15</text>
+  <text x="52" y="410" font-family="monospace" font-size="12" fill="#3a4a5e">16</text>
+  <text x="52" y="428" font-family="monospace" font-size="12" fill="#3a4a5e">17</text>
+  <text x="52" y="446" font-family="monospace" font-size="12" fill="#3a4a5e">18</text>
+  <text x="52" y="464" font-family="monospace" font-size="12" fill="#3a4a5e">19</text>
+  <text x="52" y="482" font-family="monospace" font-size="12" fill="#3a4a5e">20</text>
+  <text x="52" y="500" font-family="monospace" font-size="12" fill="#3a4a5e">21</text>
+
+  <!-- Code text -->
+  <text x="88" y="140" font-family="monospace" font-size="13" fill="#56cce8">import </text>
+  <text x="143" y="140" font-family="monospace" font-size="13" fill="#f7c948">'package:flutter/material.dart'</text>
+  <text x="382" y="140" font-family="monospace" font-size="13" fill="#c9d1d9">;</text>
+
+  <text x="88" y="176" font-family="monospace" font-size="13" fill="#79c0ff">void </text>
+  <text x="127" y="176" font-family="monospace" font-size="13" fill="#d2a8ff">main</text>
+  <text x="163" y="176" font-family="monospace" font-size="13" fill="#c9d1d9">() {'{}'}</text>
+
+  <text x="88" y="194" font-family="monospace" font-size="13" fill="#c9d1d9">  </text>
+  <text x="100" y="194" font-family="monospace" font-size="13" fill="#d2a8ff">runApp</text>
+  <text x="149" y="194" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+  <text x="157" y="194" font-family="monospace" font-size="13" fill="#79c0ff">MyApp</text>
+  <text x="202" y="194" font-family="monospace" font-size="13" fill="#c9d1d9">());</text>
+
+  <text x="88" y="212" font-family="monospace" font-size="13" fill="#c9d1d9">{'}'}</text>
+
+  <text x="88" y="248" font-family="monospace" font-size="13" fill="#79c0ff">class </text>
+  <text x="133" y="248" font-family="monospace" font-size="13" fill="#56cce8">MyApp </text>
+  <text x="185" y="248" font-family="monospace" font-size="13" fill="#79c0ff">extends </text>
+  <text x="250" y="248" font-family="monospace" font-size="13" fill="#56cce8">StatelessWidget </text>
+  <text x="384" y="248" font-family="monospace" font-size="13" fill="#c9d1d9">{'{'}</text>
+
+  <text x="88" y="266" font-family="monospace" font-size="13" fill="#c9d1d9">  </text>
+  <text x="100" y="266" font-family="monospace" font-size="13" fill="#56cce8">Widget </text>
+  <text x="152" y="266" font-family="monospace" font-size="13" fill="#d2a8ff">build</text>
+  <text x="188" y="266" font-family="monospace" font-size="13" fill="#c9d1d9">(BuildContext ctx) {'{'}</text>
+
+  <text x="88" y="284" font-family="monospace" font-size="13" fill="#79c0ff">    return </text>
+  <text x="155" y="284" font-family="monospace" font-size="13" fill="#56cce8">MaterialApp</text>
+  <text x="258" y="284" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+
+  <text x="88" y="302" font-family="monospace" font-size="13" fill="#c9d1d9">      home: </text>
+  <text x="165" y="302" font-family="monospace" font-size="13" fill="#56cce8">Scaffold</text>
+  <text x="224" y="302" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+
+  <text x="88" y="320" font-family="monospace" font-size="13" fill="#c9d1d9">        appBar: </text>
+  <text x="178" y="320" font-family="monospace" font-size="13" fill="#56cce8">AppBar</text>
+  <text x="225" y="320" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+
+  <text x="88" y="338" font-family="monospace" font-size="13" fill="#c9d1d9">          title: </text>
+  <text x="182" y="338" font-family="monospace" font-size="13" fill="#56cce8">Text</text>
+  <text x="213" y="338" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+  <text x="221" y="338" font-family="monospace" font-size="13" fill="#f7c948">'မင်္ဂလာပါ Flutter'</text>
+  <text x="388" y="338" font-family="monospace" font-size="13" fill="#c9d1d9">)),</text>
+
+  <text x="88" y="356" font-family="monospace" font-size="13" fill="#c9d1d9">        body: </text>
+  <text x="162" y="356" font-family="monospace" font-size="13" fill="#56cce8">Center</text>
+  <text x="208" y="356" font-family="monospace" font-size="13" fill="#c9d1d9">(child:</text>
+
+  <text x="88" y="374" font-family="monospace" font-size="13" fill="#c9d1d9">          </text>
+  <text x="165" y="374" font-family="monospace" font-size="13" fill="#56cce8">Text</text>
+  <text x="196" y="374" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+  <text x="204" y="374" font-family="monospace" font-size="13" fill="#f7c948">'Hello World!'</text>
+  <text x="342" y="374" font-family="monospace" font-size="13" fill="#c9d1d9">,</text>
+
+  <text x="88" y="392" font-family="monospace" font-size="13" fill="#c9d1d9">            style: </text>
+  <text x="196" y="392" font-family="monospace" font-size="13" fill="#56cce8">TextStyle</text>
+  <text x="263" y="392" font-family="monospace" font-size="13" fill="#c9d1d9">(</text>
+
+  <text x="88" y="410" font-family="monospace" font-size="13" fill="#c9d1d9">              fontSize: </text>
+  <text x="230" y="410" font-family="monospace" font-size="13" fill="#79c0ff">24</text>
+  <text x="246" y="410" font-family="monospace" font-size="13" fill="#c9d1d9">, color: </text>
+  <text x="312" y="410" font-family="monospace" font-size="13" fill="#56cce8">Colors</text>
+  <text x="358" y="410" font-family="monospace" font-size="13" fill="#c9d1d9">.blue,</text>
+
+  <text x="88" y="428" font-family="monospace" font-size="13" fill="#c9d1d9">            )))),</text>
+
+  <text x="88" y="446" font-family="monospace" font-size="13" fill="#c9d1d9">    );</text>
+
+  <text x="88" y="464" font-family="monospace" font-size="13" fill="#c9d1d9">  {'}'}</text>
+
+  <text x="88" y="482" font-family="monospace" font-size="13" fill="#c9d1d9">{'}'}</text>
+
+  <!-- Cursor -->
+  <rect x="88" y="492" width="8" height="15" rx="1" fill="#54C5F8" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ── CENTER: FLUTTER LOGO ── -->
+  <!-- Glow behind logo -->
+  <ellipse cx="600" cy="315" rx="70" ry="90" fill="#54C5F8" opacity="0.15" filter="url(#bigGlow)"/>
+
+  <!-- Flutter "F" shape (accurate logo) -->
+  <!-- Top diagonal bar -->
+  <polygon points="568,185 632,185 556,261 492,261" fill="url(#logoTop)" filter="url(#glow)"/>
+  <!-- Bottom left smaller bar -->
+  <polygon points="492,282 556,282 524,314 460,314" fill="#0288D1" opacity="0.9"/>
+  <!-- Bottom right larger bar -->
+  <polygon points="556,282 620,282 648,310 584,310" fill="url(#logoBot)" filter="url(#glow)"/>
+  <!-- Inner shadow triangle -->
+  <polygon points="556,261 584,261 556,282 528,282" fill="#01579B" opacity="0.7"/>
+
+  <!-- "Flutter" label under logo -->
+  <text x="600" y="370" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" fill="#54C5F8" text-anchor="middle" font-weight="700" letter-spacing="8" filter="url(#glow)" opacity="0.95">FLUTTER</text>
+  <text x="600" y="392" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle" letter-spacing="3" opacity="0.45">BY GOOGLE</text>
+
+  <!-- Divider lines from logo to sides -->
+  <line x1="460" y1="298" x2="200" y2="298" stroke="#54C5F8" stroke-width="1" opacity="0.15"/>
+  <line x1="648" y1="298" x2="900" y2="298" stroke="#54C5F8" stroke-width="1" opacity="0.15"/>
+
+  <!-- ── RIGHT: DEVICES ── -->
+
+  <!-- PHONE frame -->
+  <g transform="translate(690, 95)">
+    <rect x="0" y="0" width="100" height="195" rx="16" fill="#1a2740" stroke="#2d4060" stroke-width="2"/>
+    <rect x="0" y="0" width="100" height="16" rx="16" fill="#2d4060" opacity="0.5"/>
+    <rect x="0" y="179" width="100" height="16" rx="16" fill="#2d4060" opacity="0.5"/>
+    <!-- notch -->
+    <rect x="32" y="4" width="36" height="8" rx="4" fill="#0d1929"/>
+    <!-- screen -->
+    <rect x="6" y="18" width="88" height="159" rx="6" fill="url(#screenGrad)"/>
+    <!-- fake UI on screen -->
+    <rect x="12" y="28" width="76" height="24" rx="4" fill="#54C5F8" opacity="0.25"/>
+    <text x="50" y="44" font-family="monospace" font-size="9" fill="#54C5F8" text-anchor="middle" opacity="0.8">AppBar</text>
+    <rect x="20" y="62" width="60" height="6" rx="2" fill="#c9d1d9" opacity="0.25"/>
+    <rect x="20" y="74" width="48" height="6" rx="2" fill="#c9d1d9" opacity="0.18"/>
+    <rect x="20" y="86" width="55" height="6" rx="2" fill="#c9d1d9" opacity="0.15"/>
+    <rect x="12" y="102" width="34" height="34" rx="6" fill="#54C5F8" opacity="0.15"/>
+    <rect x="54" y="102" width="34" height="34" rx="6" fill="#d2a8ff" opacity="0.15"/>
+    <rect x="12" y="144" width="76" height="22" rx="4" fill="#54C5F8" opacity="0.35"/>
+    <text x="50" y="159" font-family="monospace" font-size="8" fill="#fff" text-anchor="middle" opacity="0.8">Button</text>
+    <!-- home indicator -->
+    <rect x="38" y="182" width="24" height="3" rx="1.5" fill="#c9d1d9" opacity="0.3"/>
+    <text x="50" y="218" font-family="'Segoe UI', sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle" opacity="0.7">Android / iOS</text>
+  </g>
+
+  <!-- BROWSER frame -->
+  <g transform="translate(820, 100)">
+    <rect x="0" y="0" width="190" height="130" rx="10" fill="#1a2740" stroke="#2d4060" stroke-width="2"/>
+    <!-- browser bar -->
+    <rect x="0" y="0" width="190" height="28" rx="10" fill="#131d2e"/>
+    <rect x="0" y="18" width="190" height="10" fill="#131d2e"/>
+    <!-- browser dots -->
+    <circle cx="14" cy="14" r="4" fill="#f87171" opacity="0.7"/>
+    <circle cx="26" cy="14" r="4" fill="#fbbf24" opacity="0.7"/>
+    <circle cx="38" cy="14" r="4" fill="#34d399" opacity="0.7"/>
+    <!-- URL bar -->
+    <rect x="52" y="8" width="110" height="12" rx="6" fill="#0d1929"/>
+    <text x="107" y="18" font-family="monospace" font-size="7" fill="#54C5F8" text-anchor="middle" opacity="0.5">myapp.web.app</text>
+    <!-- screen content -->
+    <rect x="6" y="32" width="178" height="92" rx="4" fill="url(#screenGrad)"/>
+    <!-- fake web content -->
+    <rect x="12" y="38" width="166" height="16" rx="3" fill="#54C5F8" opacity="0.2"/>
+    <text x="95" y="50" font-family="monospace" font-size="8" fill="#54C5F8" text-anchor="middle" opacity="0.7">Navigation Bar</text>
+    <rect x="12" y="62" width="80" height="8" rx="2" fill="#c9d1d9" opacity="0.2"/>
+    <rect x="12" y="74" width="60" height="8" rx="2" fill="#c9d1d9" opacity="0.15"/>
+    <rect x="106" y="60" width="72" height="52" rx="6" fill="#54C5F8" opacity="0.1"/>
+    <text x="95" y="150" font-family="'Segoe UI', sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle" opacity="0.7">Web</text>
+  </g>
+
+  <!-- DESKTOP frame -->
+  <g transform="translate(800, 265)">
+    <rect x="0" y="0" width="210" height="135" rx="10" fill="#1a2740" stroke="#2d4060" stroke-width="2"/>
+    <!-- title bar -->
+    <rect x="0" y="0" width="210" height="26" rx="10" fill="#131d2e"/>
+    <rect x="0" y="16" width="210" height="10" fill="#131d2e"/>
+    <!-- dots -->
+    <circle cx="12" cy="13" r="4" fill="#f87171" opacity="0.7"/>
+    <circle cx="24" cy="13" r="4" fill="#fbbf24" opacity="0.7"/>
+    <circle cx="36" cy="13" r="4" fill="#34d399" opacity="0.7"/>
+    <!-- title -->
+    <text x="105" y="17" font-family="monospace" font-size="8" fill="#8899aa" text-anchor="middle">MyApp — Desktop</text>
+    <!-- screen -->
+    <rect x="5" y="28" width="200" height="101" rx="3" fill="url(#screenGrad)"/>
+    <!-- sidebar + content -->
+    <rect x="5" y="28" width="50" height="101" fill="#0a1422" opacity="0.8"/>
+    <rect x="10" y="36" width="38" height="8" rx="2" fill="#54C5F8" opacity="0.5"/>
+    <rect x="10" y="50" width="38" height="6" rx="2" fill="#c9d1d9" opacity="0.2"/>
+    <rect x="10" y="62" width="38" height="6" rx="2" fill="#c9d1d9" opacity="0.15"/>
+    <rect x="10" y="74" width="38" height="6" rx="2" fill="#c9d1d9" opacity="0.15"/>
+    <rect x="10" y="86" width="38" height="6" rx="2" fill="#c9d1d9" opacity="0.1"/>
+    <!-- main content area -->
+    <rect x="60" y="34" width="140" height="12" rx="2" fill="#54C5F8" opacity="0.18"/>
+    <rect x="60" y="52" width="105" height="6" rx="2" fill="#c9d1d9" opacity="0.15"/>
+    <rect x="60" y="63" width="85" height="6" rx="2" fill="#c9d1d9" opacity="0.12"/>
+    <rect x="60" y="80" width="60" height="26" rx="4" fill="#54C5F8" opacity="0.3"/>
+    <rect x="128" y="80" width="60" height="26" rx="4" fill="#d2a8ff" opacity="0.2"/>
+    <!-- stand -->
+    <rect x="90" y="137" width="30" height="10" rx="2" fill="#1a2740"/>
+    <rect x="75" y="147" width="60" height="5" rx="2" fill="#2d4060"/>
+    <text x="105" y="172" font-family="'Segoe UI', sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle" opacity="0.7">Desktop / macOS</text>
+  </g>
+
+  <!-- Connecting lines (logo to devices) -->
+  <line x1="650" y1="240" x2="735" y2="200" stroke="#54C5F8" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.3"/>
+  <line x1="650" y1="255" x2="818" y2="170" stroke="#54C5F8" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.3"/>
+  <line x1="650" y1="300" x2="798" y2="335" stroke="#54C5F8" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.3"/>
+
+  <!-- ── BOTTOM BANNER ── -->
+  <rect x="0" y="540" width="1200" height="90" fill="#0d1117" opacity="0.85"/>
+  <line x1="0" y1="540" x2="1200" y2="540" stroke="#54C5F8" stroke-width="1" opacity="0.2"/>
+
+  <!-- Left: tagline -->
+  <text x="60" y="592" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" fill="#ffffff" font-weight="700" opacity="0.92">Code တစ်ခါရေးရုံနဲ့</text>
+  <text x="60" y="618" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" fill="#54C5F8" letter-spacing="2" opacity="0.65">WRITE ONCE  ·  RUN EVERYWHERE</text>
+
+  <!-- Right: platform tags -->
+  <g transform="translate(780, 557)">
+    <rect x="0" y="0" width="72" height="24" rx="12" fill="#54C5F8" opacity="0.18"/>
+    <text x="36" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle">Android</text>
+  </g>
+  <g transform="translate(862, 557)">
+    <rect x="0" y="0" width="52" height="24" rx="12" fill="#54C5F8" opacity="0.18"/>
+    <text x="26" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle">iOS</text>
+  </g>
+  <g transform="translate(924, 557)">
+    <rect x="0" y="0" width="52" height="24" rx="12" fill="#54C5F8" opacity="0.18"/>
+    <text x="26" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#54C5F8" text-anchor="middle">Web</text>
+  </g>
+  <g transform="translate(786, 591)">
+    <rect x="0" y="0" width="78" height="24" rx="12" fill="#d2a8ff" opacity="0.18"/>
+    <text x="39" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#d2a8ff" text-anchor="middle">Windows</text>
+  </g>
+  <g transform="translate(874, 591)">
+    <rect x="0" y="0" width="62" height="24" rx="12" fill="#d2a8ff" opacity="0.18"/>
+    <text x="31" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#d2a8ff" text-anchor="middle">macOS</text>
+  </g>
+  <g transform="translate(946, 591)">
+    <rect x="0" y="0" width="56" height="24" rx="12" fill="#d2a8ff" opacity="0.18"/>
+    <text x="28" y="16" font-family="'Segoe UI', sans-serif" font-size="11" fill="#d2a8ff" text-anchor="middle">Linux</text>
+  </g>
+</svg>
