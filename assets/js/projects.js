@@ -87,7 +87,9 @@ const projectLayout = ({ title, image, textCard, description, tags, platform, ap
                 <h4 class="project__text-card-title">${title}</h4>
                 <p class="project__text-card-desc">${description}</p>
                </div>`
-            : `<img class="project__image" src="${imagesPath}${image}" />`
+            : platform === "mobile"
+                ? `<div class="phone-frame"><img class="project__image" src="${imagesPath}${image}" /></div>`
+                : `<img class="project__image" src="${imagesPath}${image}" />`
         }
         ${platformBadge[platform] || ""}
     </div>
@@ -158,8 +160,29 @@ function getFiltered() {
 	});
 }
 
+function isMobileViewport() {
+	return window.innerWidth <= 600;
+}
+
 function renderPage() {
 	const filtered = getFiltered();
+
+	if (isMobileViewport()) {
+		// Mobile: show all projects stacked, no pagination
+		projectElements.forEach((el) => {
+			el.style.display = "none";
+			el.classList.remove("project--lone");
+		});
+		filtered.forEach((el) => (el.style.display = ""));
+		prevArrow.style.display = "none";
+		nextArrow.style.display = "none";
+		return;
+	}
+
+	// Desktop: paginate
+	prevArrow.style.display = "";
+	nextArrow.style.display = "";
+
 	const page = pageState[currentFilter];
 	const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 	const visible = filtered.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
@@ -205,3 +228,10 @@ nextArrow.addEventListener("click", () => {
 
 // Initial render
 renderPage();
+
+// Re-render on orientation change / resize between mobile ↔ desktop
+let _resizeTimer;
+window.addEventListener("resize", () => {
+	clearTimeout(_resizeTimer);
+	_resizeTimer = setTimeout(renderPage, 150);
+});
