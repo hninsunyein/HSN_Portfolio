@@ -1,15 +1,15 @@
 const Skills = [
+	{
+		name: "React.js",
+		percentage: 0.75,
+	},
 	
 	{
 		name: "CSS3 / Tailwind",
-		percentage: 0.88,
+		percentage: 0.60,
 	},
 	{
-		name: "JavaScript / React.js",
-		percentage: 0.85,
-	},
-	{
-		name: "SASS",
+		name: "Flutter",
 		percentage: 0.70,
 	},
 	{
@@ -22,11 +22,7 @@ const Skills = [
 	},
 	{
 		name: "MongoDB / PostgreSQL",
-		percentage: 0.70,
-	},
-	{
-		name: "Flutter",
-		percentage: 0.85,
+		percentage: 0.60,
 	},
 	{
 		name: "Docker",
@@ -38,7 +34,7 @@ const Skills = [
 	},
 	{
 		name: "AI-Assisted Dev (Claude Code)",
-		percentage: 0.85,
+		percentage: 0.65,
 	},
 ];
 
