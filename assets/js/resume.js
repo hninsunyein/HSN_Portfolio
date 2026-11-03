@@ -1,8 +1,8 @@
 const ExperienceTimelines = [
 	{
-		date: "Dec 2023 – Present",
+		date: "Dec 2023 – Jun 2025",
 		experiences: [
-			{ title: "Freelance Developer", description: "Self-employed · Remote" },
+			{ title: "Frontend Developer", description: "Freelance · Remote" },
 		],
 	},
 	{
@@ -14,7 +14,13 @@ const ExperienceTimelines = [
 	{
 		date: "Aug 2021 – Jan 2023",
 		experiences: [
-			{ title: "Coding Instructor", description: "S2 Tech Training Center · Remote" },
+			{ title: "Senior Instructor", description: "S2 Tech Training Center · Remote" },
+		],
+	},
+	{
+		date: "Jan 2019 – Jan 2021",
+		experiences: [
+			{ title: "Frontend Developer", description: "University of Technology (Yatanarpon Cyber City) · Part-time" },
 		],
 	},
 	{
