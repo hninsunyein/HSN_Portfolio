@@ -11,12 +11,12 @@ const ExperienceTimelines = [
 			{ title: "Web Developer", description: "Kumo Solutions Co.Ltd · Mandalay, Myanmar (NXOps – Evercomm Singapore)" },
 		],
 	},
-	{
-		date: "Aug 2021 – Jan 2023",
-		experiences: [
-			{ title: "Senior Instructor", description: "S2 Tech Training Center · Remote" },
-		],
-	},
+	// {
+	// 	date: "Aug 2021 – Jan 2023",
+	// 	experiences: [
+	// 		{ title: "Senior Instructor", description: "S2 Tech Training Center · Remote" },
+	// 	],
+	// },
 	{
 		date: "Jan 2019 – Jan 2021",
 		experiences: [
